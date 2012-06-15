@@ -13,6 +13,8 @@ Requirements:
 - Automatic Reference Counting (ARC) enabled
 
 Example:
+
+```
 - (void)doComplicatedStuffWithCoreData {
     [self.managedObjectContent lock];
      ON_SCOPE_EXIT(^{
@@ -21,6 +23,7 @@ Example:
      });
      // do complicated stuff with many return points
 }
+```
 
 Usage:
 - You need ADScopeGuard.h and ADScopeGuard.m present in your project, either as source
