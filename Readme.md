@@ -20,7 +20,29 @@ Example:
          // Unlock the context no matter how we return from method
          [self.managedObjectContext unlock];
      });
+	 
      // do complicated stuff with many return points
+}
+
+- (void)allocateMemoryAndDoStuff {
+    char *buffer = (char *)malloc(sizeof(int) * 1000);
+    
+    ON_SCOPE_EXIT(^{
+        NSLog(@"freeing allocated memory in -application:didFinishLaunchingWithOptions:");
+        free(buffer);
+    });
+	
+	// do complicated stuff with buffer
+}
+
+- (void)useCoreFoundation {
+    CFMutableAttributedStringRef attrString = CFAttributedStringCreateMutable(kCFAllocatorDefault, 0);
+	
+    MAKE_GUARD(^{
+		CFRelease(attrString);
+	});
+	
+	// use attributed string
 }
 ```
 
