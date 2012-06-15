@@ -32,3 +32,6 @@ The void_block parameter is well ... a void block.
 
 Notes:
 - If Objective-C++ is being used, use Boost ScopeExit or something else instead.
+
+Feedback:
+- Allen Ding (@alding)
