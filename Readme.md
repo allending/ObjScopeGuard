@@ -22,27 +22,31 @@ Example:
      });
 	 
      // do complicated stuff with many return points
+	 // ...
 }
 
 - (void)allocateMemoryAndDoStuff {
     char *buffer = (char *)malloc(sizeof(int) * 1000);
     
     ON_SCOPE_EXIT(^{
-        NSLog(@"freeing allocated memory in -application:didFinishLaunchingWithOptions:");
+		// Make sure buffer is always freed
         free(buffer);
     });
 	
 	// do complicated stuff with buffer
+	// ...
 }
 
 - (void)useCoreFoundation {
     CFMutableAttributedStringRef attrString = CFAttributedStringCreateMutable(kCFAllocatorDefault, 0);
 	
     MAKE_GUARD(^{
+		// Make sure attributed string is always released
 		CFRelease(attrString);
 	});
 	
 	// use attributed string
+	// ...
 }
 ```
 
