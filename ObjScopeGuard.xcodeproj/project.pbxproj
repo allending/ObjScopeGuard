@@ -1,0 +1,280 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FA7319F158B1C6900FDF2B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA7319E158B1C6900FDF2B5 /* UIKit.framework */; };
+		9FA731A1158B1C6900FDF2B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA731A0158B1C6900FDF2B5 /* Foundation.framework */; };
+		9FA731A3158B1C6900FDF2B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA731A2158B1C6900FDF2B5 /* CoreGraphics.framework */; };
+		9FA731A9158B1C6900FDF2B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FA731A7158B1C6900FDF2B5 /* InfoPlist.strings */; };
+		9FA731AB158B1C6900FDF2B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA731AA158B1C6900FDF2B5 /* main.m */; };
+		9FA731AF158B1C6900FDF2B5 /* ADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA731AE158B1C6900FDF2B5 /* ADAppDelegate.m */; };
+		9FA731BE158B1CC700FDF2B5 /* ADScopeGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA731BD158B1CC700FDF2B5 /* ADScopeGuard.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9FA7319A158B1C6900FDF2B5 /* ObjScopeGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjScopeGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA7319E158B1C6900FDF2B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9FA731A0158B1C6900FDF2B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9FA731A2158B1C6900FDF2B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9FA731A6158B1C6900FDF2B5 /* ObjScopeGuard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjScopeGuard-Info.plist"; sourceTree = "<group>"; };
+		9FA731A8158B1C6900FDF2B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9FA731AA158B1C6900FDF2B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9FA731AC158B1C6900FDF2B5 /* ObjScopeGuard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjScopeGuard-Prefix.pch"; sourceTree = "<group>"; };
+		9FA731AD158B1C6900FDF2B5 /* ADAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADAppDelegate.h; sourceTree = "<group>"; };
+		9FA731AE158B1C6900FDF2B5 /* ADAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADAppDelegate.m; sourceTree = "<group>"; };
+		9FA731BC158B1CC700FDF2B5 /* ADScopeGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADScopeGuard.h; sourceTree = "<group>"; };
+		9FA731BD158B1CC700FDF2B5 /* ADScopeGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADScopeGuard.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FA73197158B1C6900FDF2B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA7319F158B1C6900FDF2B5 /* UIKit.framework in Frameworks */,
+				9FA731A1158B1C6900FDF2B5 /* Foundation.framework in Frameworks */,
+				9FA731A3158B1C6900FDF2B5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FA7318F158B1C6900FDF2B5 = {
+			isa = PBXGroup;
+			children = (
+				9FA731BB158B1C7F00FDF2B5 /* ObjScopeGuard */,
+				9FA731A4158B1C6900FDF2B5 /* Test App Files */,
+				9FA7319D158B1C6900FDF2B5 /* Frameworks */,
+				9FA7319B158B1C6900FDF2B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FA7319B158B1C6900FDF2B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7319A158B1C6900FDF2B5 /* ObjScopeGuard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FA7319D158B1C6900FDF2B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FA7319E158B1C6900FDF2B5 /* UIKit.framework */,
+				9FA731A0158B1C6900FDF2B5 /* Foundation.framework */,
+				9FA731A2158B1C6900FDF2B5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FA731A4158B1C6900FDF2B5 /* Test App Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FA731AD158B1C6900FDF2B5 /* ADAppDelegate.h */,
+				9FA731AE158B1C6900FDF2B5 /* ADAppDelegate.m */,
+				9FA731A5158B1C6900FDF2B5 /* Supporting Files */,
+			);
+			name = "Test App Files";
+			path = ObjScopeGuard;
+			sourceTree = "<group>";
+		};
+		9FA731A5158B1C6900FDF2B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FA731A6158B1C6900FDF2B5 /* ObjScopeGuard-Info.plist */,
+				9FA731A7158B1C6900FDF2B5 /* InfoPlist.strings */,
+				9FA731AA158B1C6900FDF2B5 /* main.m */,
+				9FA731AC158B1C6900FDF2B5 /* ObjScopeGuard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FA731BB158B1C7F00FDF2B5 /* ObjScopeGuard */ = {
+			isa = PBXGroup;
+			children = (
+				9FA731BC158B1CC700FDF2B5 /* ADScopeGuard.h */,
+				9FA731BD158B1CC700FDF2B5 /* ADScopeGuard.m */,
+			);
+			name = ObjScopeGuard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FA73199158B1C6900FDF2B5 /* ObjScopeGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FA731B8158B1C6900FDF2B5 /* Build configuration list for PBXNativeTarget "ObjScopeGuard" */;
+			buildPhases = (
+				9FA73196158B1C6900FDF2B5 /* Sources */,
+				9FA73197158B1C6900FDF2B5 /* Frameworks */,
+				9FA73198158B1C6900FDF2B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjScopeGuard;
+			productName = ObjScopeGuard;
+			productReference = 9FA7319A158B1C6900FDF2B5 /* ObjScopeGuard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FA73191158B1C6900FDF2B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AD;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 9FA73194158B1C6900FDF2B5 /* Build configuration list for PBXProject "ObjScopeGuard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9FA7318F158B1C6900FDF2B5;
+			productRefGroup = 9FA7319B158B1C6900FDF2B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FA73199158B1C6900FDF2B5 /* ObjScopeGuard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FA73198158B1C6900FDF2B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA731A9158B1C6900FDF2B5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FA73196158B1C6900FDF2B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FA731AB158B1C6900FDF2B5 /* main.m in Sources */,
+				9FA731AF158B1C6900FDF2B5 /* ADAppDelegate.m in Sources */,
+				9FA731BE158B1CC700FDF2B5 /* ADScopeGuard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9FA731A7158B1C6900FDF2B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FA731A8158B1C6900FDF2B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FA731B6158B1C6900FDF2B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9FA731B7158B1C6900FDF2B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FA731B9158B1C6900FDF2B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjScopeGuard/ObjScopeGuard-Prefix.pch";
+				INFOPLIST_FILE = "ObjScopeGuard/ObjScopeGuard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9FA731BA158B1C6900FDF2B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjScopeGuard/ObjScopeGuard-Prefix.pch";
+				INFOPLIST_FILE = "ObjScopeGuard/ObjScopeGuard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FA73194158B1C6900FDF2B5 /* Build configuration list for PBXProject "ObjScopeGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA731B6158B1C6900FDF2B5 /* Debug */,
+				9FA731B7158B1C6900FDF2B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FA731B8158B1C6900FDF2B5 /* Build configuration list for PBXNativeTarget "ObjScopeGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA731B9158B1C6900FDF2B5 /* Debug */,
+				9FA731BA158B1C6900FDF2B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FA73191158B1C6900FDF2B5 /* Project object */;
+}
